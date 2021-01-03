@@ -110,7 +110,7 @@ class Car:
 def cv():
     global onLeft, onRight, detect
     cap = cv2.VideoCapture(0)
-    face_cascade = cv2.CascadeClassifier('hand.xml')
+    face_cascade = cv2.CascadeClassifier('hand.xml') # source for Haar cascade https://github.com/Aravindlivewire/Opencv/tree/master/haarcascade
     width = cap.get(3)
     height = cap.get(4)
     #creates center region with width 60 pixel if detected midpoint falls within this region it is considered centered. 
